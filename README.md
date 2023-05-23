@@ -5,6 +5,10 @@ Files for my NeoVim setup
 
 ## How to use
 
+### Favorite hotkeys
+
 ## Resources and Citations
 
 ## What I want to do/add
+
+- [ ] Make a cheat sheet shortcut like chadnvim
