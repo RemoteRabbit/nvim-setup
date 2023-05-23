@@ -22,7 +22,7 @@ augroup end
 vim.cmd.packadd('packer.nvim')
 
 function get_setup(name)
-    return string.format("require('core.%s')", name)
+    return string.format("require('config.%s')", name)
 end
 
 return require('packer').startup(function(use)
