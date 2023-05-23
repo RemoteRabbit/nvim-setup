@@ -1,1 +1,3 @@
-require("trjahnke")
+require("options")
+require("mappings")
+require("plugins")

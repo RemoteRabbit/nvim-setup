@@ -80,19 +80,10 @@ _G.packer_plugins = {
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   catppuccin = {
+    config = { "require('core.catppuccin')" },
     loaded = true,
     path = "/Users/tristanjahnke/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
-  },
-  ["cellular-automaton.nvim"] = {
-    loaded = true,
-    path = "/Users/tristanjahnke/.local/share/nvim/site/pack/packer/start/cellular-automaton.nvim",
-    url = "https://github.com/eandrju/cellular-automaton.nvim"
-  },
-  ["cloak.nvim"] = {
-    loaded = true,
-    path = "/Users/tristanjahnke/.local/share/nvim/site/pack/packer/start/cloak.nvim",
-    url = "https://github.com/laytan/cloak.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -120,6 +111,7 @@ _G.packer_plugins = {
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["copilot.vim"] = {
+    config = { "require('core.copilot')" },
     loaded = true,
     path = "/Users/tristanjahnke/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
@@ -130,11 +122,13 @@ _G.packer_plugins = {
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
   harpoon = {
+    config = { "require('core.harpoon')" },
     loaded = true,
     path = "/Users/tristanjahnke/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
   ["lsp-zero.nvim"] = {
+    config = { "require('core.lsp')" },
     loaded = true,
     path = "/Users/tristanjahnke/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
@@ -160,11 +154,13 @@ _G.packer_plugins = {
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
+    config = { "require('core.treesitter')" },
     loaded = true,
     path = "/Users/tristanjahnke/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-treesitter-context"] = {
+    config = { "require('core.treesitter-context')" },
     loaded = true,
     path = "/Users/tristanjahnke/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
@@ -175,6 +171,7 @@ _G.packer_plugins = {
     url = "https://github.com/wbthomason/packer.nvim"
   },
   playground = {
+    config = { "require('core.treesitter-playground')" },
     loaded = true,
     path = "/Users/tristanjahnke/.local/share/nvim/site/pack/packer/start/playground",
     url = "https://github.com/nvim-treesitter/playground"
@@ -185,11 +182,13 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["refactoring.nvim"] = {
+    config = { "require('core.refactoring')" },
     loaded = true,
     path = "/Users/tristanjahnke/.local/share/nvim/site/pack/packer/start/refactoring.nvim",
     url = "https://github.com/theprimeagen/refactoring.nvim"
   },
   ["telescope.nvim"] = {
+    config = { "require('core.telescope')" },
     loaded = true,
     path = "/Users/tristanjahnke/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
@@ -201,27 +200,68 @@ _G.packer_plugins = {
     url = "https://github.com/folke/trouble.nvim"
   },
   undotree = {
+    config = { "require('core.undotree')" },
     loaded = true,
     path = "/Users/tristanjahnke/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
   ["vim-fugitive"] = {
+    config = { "require('core.fugitive')" },
     loaded = true,
     path = "/Users/tristanjahnke/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
-  },
-  ["zen-mode.nvim"] = {
-    loaded = true,
-    path = "/Users/tristanjahnke/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
-    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-treesitter-context
+time([[Config for nvim-treesitter-context]], true)
+require('core.treesitter-context')
+time([[Config for nvim-treesitter-context]], false)
+-- Config for: undotree
+time([[Config for undotree]], true)
+require('core.undotree')
+time([[Config for undotree]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\nC\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\nicons\1\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
 time([[Config for trouble.nvim]], false)
+-- Config for: playground
+time([[Config for playground]], true)
+require('core.treesitter-playground')
+time([[Config for playground]], false)
+-- Config for: harpoon
+time([[Config for harpoon]], true)
+require('core.harpoon')
+time([[Config for harpoon]], false)
+-- Config for: copilot.vim
+time([[Config for copilot.vim]], true)
+require('core.copilot')
+time([[Config for copilot.vim]], false)
+-- Config for: catppuccin
+time([[Config for catppuccin]], true)
+require('core.catppuccin')
+time([[Config for catppuccin]], false)
+-- Config for: vim-fugitive
+time([[Config for vim-fugitive]], true)
+require('core.fugitive')
+time([[Config for vim-fugitive]], false)
+-- Config for: refactoring.nvim
+time([[Config for refactoring.nvim]], true)
+require('core.refactoring')
+time([[Config for refactoring.nvim]], false)
+-- Config for: telescope.nvim
+time([[Config for telescope.nvim]], true)
+require('core.telescope')
+time([[Config for telescope.nvim]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+require('core.treesitter')
+time([[Config for nvim-treesitter]], false)
+-- Config for: lsp-zero.nvim
+time([[Config for lsp-zero.nvim]], true)
+require('core.lsp')
+time([[Config for lsp-zero.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
